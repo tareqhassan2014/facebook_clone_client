@@ -7,9 +7,16 @@ const App = () => {
   return (
     <div>
       <Header />
-      <div className="app__body">
-        <Sidebar />
-        <Feed />
+      <div className="app__body row justify-content-between">
+        <div className="col-md-3">
+          <Sidebar />
+        </div>
+        <div className="col-md-4">
+          <Feed />
+        </div>
+        <div className="col-md-3">
+          <Sidebar />
+        </div>
       </div>
     </div>
   );
